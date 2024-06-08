@@ -1,0 +1,38 @@
+.main {
+  background-color: white;
+  color: #1c1c1c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.container{
+  width: 100%;
+  padding-block: 30px;
+  text-align: center;
+
+  & p {
+    font-size: 20px;
+  }
+}
+
+.bodyApp {
+      overflow: hidden;
+
+      
+      width: 100%;
+      height: 400px;
+}
+
+
+.boxButton {
+  padding-block: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-inline: 10px;
+}
