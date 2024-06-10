@@ -22,9 +22,9 @@ export default function App() {
            onClick={() => dispatch(increment())}
            >Ajouter</button>
            <button onClick={() => dispatch(addMultiple(10))}>Ajouter X10</button>
-           <button onClick={() => dispatch(decrement())}>Suprimer</button>
+           <button onClick={() => counter > 0 && dispatch(decrement())}>Suprimer</button>
            <button
-           onClick={() => dispatch(deleteMultiple(10))}
+           onClick={() => counter > 10 && dispatch(deleteMultiple(10))}
            >Suprimer x10</button>
          </div>
        
