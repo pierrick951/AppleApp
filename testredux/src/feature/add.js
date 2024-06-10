@@ -18,10 +18,17 @@ export const addApple = createSlice({
 
         decrement: (state) => {
             state.value -= 1;
+        },
+
+        addMultiple: (state, action) => {
+            state.value += action.payload
+        },
+        deleteMultiple: (state,action) => {
+            state.value -= action.payload
         }
     }
 
 })
 
-export const { increment, decrement } = addApple.actions;
+export const { increment, decrement, addMultiple, deleteMultiple} = addApple.actions;
 export default addApple.reducer;

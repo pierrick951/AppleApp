@@ -1,5 +1,5 @@
 import { useDispatch,useSelector  } from 'react-redux'
-import { increment, decrement } from './feature/add'
+import { increment, decrement, addMultiple, deleteMultiple} from './feature/add'
 import './App.css'
 
 
@@ -21,9 +21,11 @@ export default function App() {
            <button 
            onClick={() => dispatch(increment())}
            >Ajouter</button>
-           <button>Ajouter X10</button>
-           <button>Suprimer</button>
-           <button>Suprimer x10</button>
+           <button onClick={() => dispatch(addMultiple(10))}>Ajouter X10</button>
+           <button onClick={() => dispatch(decrement())}>Suprimer</button>
+           <button
+           onClick={() => dispatch(deleteMultiple(10))}
+           >Suprimer x10</button>
          </div>
        
     </div>
