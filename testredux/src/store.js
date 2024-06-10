@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import add from './feature/add';
+import addAppleReducer from './feature/add';
 
 
 export const store = configureStore({
     reducer: {
-        add,
+        addApple: addAppleReducer,
         
     }
 })
